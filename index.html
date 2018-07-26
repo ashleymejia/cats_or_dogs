@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Vote for cats or dogs</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="index.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Let's settle this once and for all</h1>
+        <h2><p>What do you like more, cats or dogs?</p></h2>
+        <button onclick="toggleVoteContainer()">Vote</button>
+      </div>
+    </div>
+
+    <div id="vote-container">
+
+      <div id="cats-container" class="voting">
+        <div class="carousel" id= "cats-carousel" onclick= "changeImage(this)">
+          <img src ="https://www.catster.com/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg" alt="cat image"/>
+        </div>
+
+        <div class="likes">
+            <i class="far fa-heart" onclick="increaseLikes(this)"><span class="score">0</span></i>likes
+        </div>
+      </div>
+
+    <div id="dogs-container" class="voting">
+      <div class="carousel" id= "dogs-carousel"onclick= "changeImage(this)">
+        <img src="https://www.petmd.com/sites/default/files/salmonella-infection-dogs.jpg" alt="dog image"/>
+      </div>
+      <div class="likes">
+          <i class="far fa-heart" onclick="increaseLikes(this)"><span class="score">0</span></i>likes
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
